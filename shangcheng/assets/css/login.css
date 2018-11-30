@@ -1,0 +1,154 @@
+/* 登录 */
+.reg-head{
+    width:1200px;
+    height:122px;
+    background: #FFF;
+    margin:0 auto;
+}
+.reg-head img{
+    margin-top:32px;
+}
+.reg-cont{
+    width:100%;
+    height:600px;
+    background: url("../img/pic/login.png") no-repeat;
+}
+/* 登录内容部分 */
+.reg-content{
+    width:1200px;
+    margin:0 auto;
+}
+
+.reg-wrap{
+    width:402px;
+    min-height:330px;
+    /* background-color:#fff;
+    opacity: 0.5; */
+    background: rgba(255, 255, 255, .7);
+    margin-top:118px;
+    float: right;
+    padding-bottom:48px;
+}
+.reg-t{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    color:#000;
+    font-size:14px;
+    letter-spacing: 2px;
+    padding-left:33px;
+    padding-right:55px;
+    box-sizing: border-box;
+    border-bottom:1px solid #a0a0a0;
+}
+.reg-wrap input{
+    margin-left:33px;
+    margin-right:55px;
+    width:316px;
+    height:42px;
+    box-sizing: border-box;
+    border:1px solid #a0a0a0;
+    background: transparent; 
+    font-size:14px;
+    line-height:42px;
+}
+.reg-wrap input.act{
+    border:1px solid #f7941c;
+}
+.user-input{
+    margin-top:18px;
+    margin-bottom:12px;
+}
+.reg-btn{
+    width:317px;
+    height:40px;
+    background-color:#f7941c;
+    border:none;
+    color:#fff;
+    font-size:14px;
+    line-height:40px;
+    text-align: center;
+    margin-top:15px;
+    margin-left:33px;
+}
+/* 登录方式 */
+.reg-way{
+    margin-left:33px;
+    padding-top:18px;
+    line-height:16px;
+}
+.qq-reg i{
+    display: inline-block;
+    float: left;
+    width:16px;
+    height:16px;
+     background: url("../img/icon/qq.png") no-repeat;
+}
+.weixin-reg i{
+    display: inline-block;
+    float: left;
+    width:16px;
+    height:16px;
+     background: url("../img/icon/weixin.png") no-repeat;
+}
+.qq-reg{
+    margin-right:30px;
+}
+.qq-reg,.weixin-reg{
+    line-height:16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.qq-reg span,.weixin-reg span{
+    font-size:12px;
+    color:#646464;
+    float: left;
+    margin-left:5px;
+}
+.forget-password{
+    margin-right:66px;
+    /* text-decoration: underline; */
+    /* padding-bottom:1px; */
+    border-bottom:1px solid #646464;
+    font-size:12px;
+    line-height:14px;
+    margin-top:30px;
+    cursor: pointer;
+}
+
+
+
+/* 注册 */
+.ver-tbn{
+    width:110px;
+    height:42px;
+    line-height: 42px;
+    background-color:#f7941c;
+    border:none;
+    color:#fff;
+    font-size:14px;
+    text-align: center;
+}
+.verification-code{
+    margin-left:33px;
+}
+.verification-code input{
+    width:194px;
+    float: left;
+    margin-left:12px;
+    margin-right:0;
+
+}
+.login-font span{
+  font-size:12px;
+  float: left;
+}
+.clause-font{
+    border-bottom:1px solid #646464;
+    margin-left:10px;
+    cursor: pointer;
+}
+.forget-password.mr54{
+	margin-right:54px;
+}
+

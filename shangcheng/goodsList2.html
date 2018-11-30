@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表页</title>
+    <link rel="stylesheet" href="assets/css/base.css"/>
+    <link rel="stylesheet" href="assets/css/common.css"/>
+    <link rel="stylesheet" href="assets/css/page.css"/>
+    <script src="assets/js/jquery-1.12.0.js"></script>
+    <script src="assets/js/select.js"></script>
+</head>
+<body>
+    <div class="box bgf">
+     <!-- 头部 -->
+     <div class="head-box">
+            <div class="head-cont owh">
+                <div class="fl">
+                    <i></i>
+                    <a href="index.html"><span>有钱城首页</span></a> 
+                </div>
+                <div class="fr">
+                    <ul>
+                        <li>
+                            <a href="register.html">
+                                  <span>登录</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="我的订单-待付款.html">
+                                  <i></i>
+                                  <span>我的订单</span>
+                            </a> 
+                        </li>
+                        <li>
+                              <a href="购物车.html">
+                                  <i></i>
+                                  <span>购物车</span>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="">
+                                      <span>后台管理</span>
+                                      <i></i>  
+                              </a>   
+                         </li>
+                         <div class="cl"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索栏 -->
+        <div class="application-zhu">
+                <div class="applicat-box">
+                    <div class="fl owh">
+                          <img src="assets/img/icon/logoi.png" alt=""/>
+                          <div class="zhu-btn"><a href="申请店铺入驻.html">申请入驻</a></div>
+                    </div> 
+                    <div class="fr">
+                        <div class="search-box">
+                            <div class="ser-icon fl por">
+                                    <span class="def-val" id="2">搜商品</span>
+                                    <i></i>
+                                    <div class="ser-list">                                
+                                        <span data-id="1">搜店铺</span>
+                                        <span data-id="2">搜商品</span>
+                                    </div>
+                            </div>
+                            <!-- 模糊搜索 -->
+                            <div class="dim-search">
+                                <input type="text" value="" class="sear-input" id="sear_input" autocomplete="off"/> 
+                                <div class="dimor-search">
+                                    <ul>
+                                    </ul>
+                                </div>
+                            </div>          
+                            <button class="btn-search" id="sear_ch">搜索</button>
+                            <div class="cl"></div>
+                        </div>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+         </div>
+        <!-- 导航部分 -->
+        <div class="nav-list">
+                <ul>
+                    <li><a href="index.html" >首页</a></li>
+                    <li><a href="classify.html" class="active">分类</a></li>
+                    <li><a href="发布-填写信息.html">发布</a></li>
+                    <li><a href="购物车.html">购物车</a></li>
+                    <li><a href="我的.html">我的</a></li>
+                </ul>
+        </div>
+        <!-- 分类 -->
+         <!-- 位置 -->
+         <div class="location-second">
+            
+        </div>
+        <div class="borderline"></div>
+        <!-- 分类列表 -->
+        <div class="classify-cont">
+            <div class="classify-box">
+                  <div class="second-column">
+                        <ul>
+                            <li class="active synth-box">
+                                <span>综合</span>
+                                <div class="total-box">
+                                    <span id="synth_sales">综合销量</span>
+                                    <span id="synth_evaluate">综合评价</span>
+                                    <span id="synth_price">综合价格(由低到高)</span>
+                                </div>          
+                            </li>
+                            <li>
+                                <span>销量</span>
+                                <div class="sort-icon">
+                                    <i class="top-sort" id="sales_up"></i>
+                                    <i class="down-sort" id="sales_down"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <span>价格</span>
+                                <div class="sort-icon">
+                                        <i class="top-sort" id="price_up"></i>
+                                        <i class="down-sort" id="price_down"></i>
+                                 </div>
+                            </li>
+                            <li>
+                                <span>评价</span>
+                                <div class="sort-icon">
+                                        <i class="top-sort" id="evaluate_up"></i>
+                                        <i class="down-sort" id="evaluate_down"></i>
+                                </div>
+                            </li>
+                            <div class="cl"></div>
+                        </ul>
+                        <!-- 右边 -->
+                        <div class="page-box owh">
+                            <div class="page-wrap fr">
+                                <!-- <span class="page-num" ><span class="orage-font now-num">5</span>/21</span>
+                                <span class="pre-page" id="pre_page"><i></i></span>
+                                <span class="next-page" id="next_page">下一页<i></i></span> -->
+                            </div>
+                        </div>
+                  </div>
+                  <!-- 商品列表 -->
+                  <div class="second-list owh" id="goods_list">
+               
+                
+                  </div>
+                  <!-- 商品列表 end -->
+            </div>
+            <!-- classify-box end -->
+        </div>
+          <!-- 尾部 -->
+        <div class="footer  mt160">
+                <div class="foot">
+                    <p>营业执照：913301065526808764 | 网络文化经营许可证：浙网文（2016）0349-219号 | 增值电信业务经营许可证：浙B2-20110349 | 安全责任书 | 浙公网安备 33010602002329号 |  </p>
+                    <p>互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002 | 浙网食A33010003 | 出版物网络交易平台服务经营备案证 | （浙）网械平台备字[2018]第00006号 |</p>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/goodsList2.js"></script>
+
+<script>
+    
+// $(function(){
+//     //取模，解决每第5个列的右边距问题
+//     $(".second-list .goods-wrap").each(function(index){
+//         index=index+1;
+//         if(index!=0&&index%5==0){
+//             $(this).css("margin-right", "0");
+//         }
+//     })
+// })
+</script>
+</html>
